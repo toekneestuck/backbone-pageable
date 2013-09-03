@@ -150,6 +150,7 @@ $(document).ready(function () {
       strictEqual(col.state.lastPage, 1);
       strictEqual(col.fullCollection.length, 2);
       deepEqual(col.links, {
+        "0": null,
         "1": "url",
         "2": "url2"
       });
@@ -178,6 +179,7 @@ $(document).ready(function () {
       strictEqual(col.state.lastPage, 2);
       strictEqual(col.fullCollection.length, 4);
       deepEqual(col.links, {
+        "0": null,
         "1": "url",
         "2": "url2",
         "3": "url3"
@@ -206,6 +208,7 @@ $(document).ready(function () {
     strictEqual(col.state.lastPage, 2);
     strictEqual(col.fullCollection.length, 4);
     deepEqual(col.links, {
+      "0": null,
       "1": "url",
       "2": "url2",
       "3": "url3"
@@ -225,6 +228,7 @@ $(document).ready(function () {
     strictEqual(col.state.lastPage, 2);
     strictEqual(col.fullCollection.length, 4);
     deepEqual(col.links, {
+      "0": null,
       "1": "url",
       "2": "url2",
       "3": "url3"

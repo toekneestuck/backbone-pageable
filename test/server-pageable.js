@@ -162,7 +162,10 @@ $(document).ready(function () {
       totalPages: null,
       totalRecords: null,
       sortKey: null,
-      order: -1
+      order: -1,
+      query : null,
+      query_field : null,
+      filters : null
     });
 
     deepEqual(col.queryParams, {
@@ -175,7 +178,12 @@ $(document).ready(function () {
       directions: {
         "-1": "asc",
         "1": "desc"
-      }
+      },
+      query : 'query',
+      query_field : 'field',
+      filter : 'filter',
+      filter_operation : 'filter_op',
+      filter_value : 'filter_value'
     });
 
     col = new Backbone.PageableCollection([
